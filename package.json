@@ -1,7 +1,7 @@
 {
-  "name": "jui-hydrogen",
-  "version": "1.0.0",
-  "description": "Jiffy UI for web",
+  "name": "jui-base",
+  "version": "0.0.1",
+  "description": "JUI base level",
   "author": "Working Theory <>",
   "private": true,
   "scripts": {
@@ -13,7 +13,7 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
-    "axios": "^0.15.2",
+    "axios": "^0.15.3",
     "es6-promise": "^4.0.5",
     "vue": "^2.0.1",
     "vue-router": "^2.0.1"
