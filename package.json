@@ -1,11 +1,21 @@
 {
   "name": "jui-base",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "JUI base level",
-  "author": "Working Theory <>",
+  "author": "Working Theory <workingtheory@thytruth.com>",
   "private": true,
+  "element-theme": {
+    "browsers": [
+      "ie > 9",
+      "last 2 versions"
+    ],
+    "out": "./static/element",
+    "config": "./src/assets/styles/element-variables.css",
+    "minimize": false
+  },
   "scripts": {
     "dev": "node build/dev-server.js",
+    "devstyle": "et",
     "build": "node build/build.js",
     "unit": "karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
@@ -14,7 +24,9 @@
   },
   "dependencies": {
     "axios": "^0.15.3",
+    "element-ui": "^1.0.7",
     "es6-promise": "^4.0.5",
+    "normalize.css": "^5.0.0",
     "vue": "^2.0.1",
     "vue-router": "^2.0.1"
   },
@@ -33,6 +45,8 @@
     "connect-history-api-fallback": "^1.1.0",
     "cross-spawn": "^4.0.2",
     "css-loader": "^0.25.0",
+    "element-theme": "^0.2.0",
+    "element-theme-default": "^1.0.7",
     "eslint": "^3.7.1",
     "eslint-config-airbnb-base": "^8.0.0",
     "eslint-friendly-formatter": "^2.0.5",
@@ -61,11 +75,16 @@
     "lolex": "^1.4.0",
     "mocha": "^3.1.0",
     "nightwatch": "^0.9.8",
-    "node-sass": "^3.13.0",
+    "node-sass": "^4.0.0",
     "opn": "^4.0.2",
     "ora": "^0.3.0",
     "phantomjs-prebuilt": "^2.1.3",
-    "sass-loader": "^4.0.2",
+    "postcss": "^5.2.6",
+    "postcss-color-gray": "^3.0.1",
+    "postcss-cssnext": "^2.9.0",
+    "postcss-import": "^9.0.0",
+    "postcss-nested": "^1.0.0",
+    "postcss-nesting": "^2.3.1",
     "selenium-server": "2.53.1",
     "semver": "^5.3.0",
     "shelljs": "^0.7.4",
